@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 export async function connectDB() {
     try {
-        const mongoUri = process.env.MONGoDB_URI;
+        const mongoUri = process.env.MONGODB_URI;
 
         if(!mongoUri){
             throw new Error("MONGODB_URI is required");

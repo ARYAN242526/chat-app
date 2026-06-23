@@ -5,7 +5,7 @@ import { upload } from "../middleware/upload.middleware.js";
 
 const router = Router();
 
-router.use(protectRoute)
+router.use(protectRoute);
 
 router.get("/users", getUsersForSidebar);
 router.get("/conversations", getConversationsForSidebar);
